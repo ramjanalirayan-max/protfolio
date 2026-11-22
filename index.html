@@ -4,9 +4,30 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
-<meta name="description" content="Rayan — web designer & developer in Bangladesh. Fast, mobile-first websites for restaurants, salons, shops and coaching centres that turn visitors into customers." />
+<meta name="description" content="Affordable, fast, mobile-first websites for restaurants, salons, shops and coaching centres in Bangladesh — from ৳2,500, delivered in 3–5 days." />
+<meta name="theme-color" content="#0E0E0C" />
+<link rel="canonical" href="https://rayanofficial.vercel.app/" />
+<meta property="og:title" content="Rayan — Web Designer &amp; Developer in Bangladesh" />
+<meta property="og:description" content="Affordable, fast, mobile-first websites for restaurants, salons, shops and coaching centres in Bangladesh — from ৳2,500, delivered in 3–5 days." />
+<meta property="og:url" content="https://rayanofficial.vercel.app/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Rayan — Web Designer &amp; Developer in Bangladesh" />
+<meta name="twitter:description" content="Affordable, fast, mobile-first websites for restaurants, salons, shops and coaching centres in Bangladesh — from ৳2,500, delivered in 3–5 days." />
 <link rel="icon" href="data:," />
-<title>Rayan — Web Designer &amp; Developer</title>
+<title>Rayan — Web Designer &amp; Developer in Bangladesh</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Rayan — Web Designer & Developer",
+  "description": "Affordable, fast, mobile-first websites for restaurants, salons, shops and coaching centres in Bangladesh.",
+  "url": "https://rayanofficial.vercel.app/",
+  "areaServed": "Bangladesh",
+  "priceRange": "BDT 2500-12000",
+  "sameAs": ["https://wa.me/8801315961760"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono&family=Instrument+Serif:ital@0;1:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -88,6 +109,10 @@
   .nav-cta:hover{background:var(--gold);color:#fff}
   .theme-btn{width:44px;height:44px;border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink);display:grid;place-items:center;flex:none}
   .theme-btn svg{width:20px;height:20px}
+  .lang-switch{display:inline-flex;border:1.5px solid var(--line-strong);background:var(--surface);box-shadow:3px 3px 0 var(--ink);flex:none}
+  .lang-switch button{border:0;background:transparent;color:var(--ink);font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:.78rem;padding:9px 10px;min-height:42px}
+  .lang-switch button.on{background:var(--lime);color:#111}
+  .mobile-menu .lang-switch{margin:12px 0 4px}
   .burger{display:none;width:46px;height:46px;border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink);place-items:center;margin-left:auto}
   .burger svg{width:22px;height:22px}
   .mobile-menu{display:none;border-top:1.5px solid var(--line-strong);padding:10px 18px 16px;background:var(--nav-bg)}
@@ -621,18 +646,22 @@
       <span><span class="bname">Rayan</span><small>Web Designer &amp; Developer</small></span>
     </a>
     <nav class="nav-links" aria-label="Main">
-      <a href="#skills" data-nav="skills">Skills</a>
-      <a href="#work" data-nav="work">Work</a>
-      <a href="#services" data-nav="services">Services</a>
-      <a href="#process" data-nav="process">How I Work</a>
-      <a href="#pricing" data-nav="pricing">Pricing</a>
-      <a href="#faq" data-nav="faq">FAQ</a>
+      <a href="#skills" data-nav="skills" data-i18n="nav.skills">Skills</a>
+      <a href="#work" data-nav="work" data-i18n="nav.work">Work</a>
+      <a href="#services" data-nav="services" data-i18n="nav.services">Services</a>
+      <a href="#process" data-nav="process" data-i18n="nav.process">How I Work</a>
+      <a href="#pricing" data-nav="pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#faq" data-nav="faq" data-i18n="nav.faq">FAQ</a>
     </nav>
     <button class="theme-btn" id="themeBtn" aria-label="Switch light / dark theme">
       <svg id="themeIconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
     </button>
-    <a class="nav-cta" href="#planner">Get a Free Quote
+    <div class="lang-switch" role="group" aria-label="Language / ভাষা">
+      <button type="button" class="lang-opt on" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-opt" data-lang="bn" aria-pressed="false">বাংলা</button>
+    </div>
+    <a class="nav-cta" href="#planner"><span data-i18n="nav.quote">Get a Free Quote</span>
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
@@ -640,13 +669,17 @@
     </button>
   </div>
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
-    <a href="#skills">Skills</a>
-    <a href="#work">Work</a>
-    <a href="#services">Services</a>
-    <a href="#process">How I Work</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#planner">Get a Free Quote</a>
-    <a href="#contact">Contact</a>
+    <div class="lang-switch" role="group" aria-label="Language / ভাষা">
+      <button type="button" class="lang-opt on" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-opt" data-lang="bn" aria-pressed="false">বাংলা</button>
+    </div>
+    <a href="#skills" data-i18n="nav.skills">Skills</a>
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#process" data-i18n="nav.process">How I Work</a>
+    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+    <a href="#planner" data-i18n="nav.quote">Get a Free Quote</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
   </nav>
 </header>
 
@@ -657,23 +690,23 @@
     <span class="giant-word" style="top:36px;right:-30px" aria-hidden="true">RAYAN®</span>
     <div class="wrap hero-grid">
       <div>
-        <span class="avail"><span class="dot"></span> Available for new projects — November 2026</span>
-        <div class="hero-meta"><span>Based in Bangladesh — working worldwide</span><span id="liveClock">--:--</span><span>Response &lt; 24h</span></div>
+        <span class="avail"><span class="dot"></span><span data-i18n="hero.avail"> Available for new projects — November 2026</span></span>
+        <div class="hero-meta"><span data-i18n="hero.meta1">Based in Bangladesh — working worldwide</span><span id="liveClock">--:--</span><span data-i18n="hero.meta3">Response &lt; 24h</span></div>
         <h1>I build websites that turn <em>visitors</em> into <span class="hl">customers<svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q 100 -2 198 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span></h1>
-        <p class="hero-sub">I'm <strong>Rayan</strong>, a web designer &amp; developer from Bangladesh. I help restaurants, salons, shops and coaching centres get more calls, orders and bookings — with fast, mobile-first websites that look like a big brand made them.</p>
+        <p class="hero-sub" data-i18n-html="hero.sub">I'm <strong>Rayan</strong>, a web designer &amp; developer from Bangladesh. I help restaurants, salons, shops and coaching centres get more calls, orders and bookings — with fast, mobile-first websites that look like a big brand made them.</p>
         <div class="hero-ctas">
-          <a class="btn btn-cta" href="#work">See My Work
+          <a class="btn btn-cta" href="#work"><span data-i18n="hero.cta1">See My Work</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
           </a>
-          <a class="btn btn-ghost" href="#planner">Calculate Your Price
+          <a class="btn btn-ghost" href="#planner"><span data-i18n="hero.cta2">Calculate Your Price</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg>
           </a>
         </div>
         <div class="hero-stats">
-          <div class="hstat"><b>3–5 days</b><span>Typical delivery time</span></div>
-          <div class="hstat"><b>100%</b><span>Mobile responsive</span></div>
-          <div class="hstat"><b>2 rounds</b><span>Free revisions included</span></div>
-          <div class="hstat"><b>2 languages</b><span>Bangla &amp; English support</span></div>
+          <div class="hstat"><b>3–5 days</b><span data-i18n="hero.stat1">Typical delivery time</span></div>
+          <div class="hstat"><b>100%</b><span data-i18n="hero.stat2">Mobile responsive</span></div>
+          <div class="hstat"><b>2 rounds</b><span data-i18n="hero.stat3">Free revisions included</span></div>
+          <div class="hstat"><b>2 languages</b><span data-i18n="hero.stat4">Bangla &amp; English support</span></div>
         </div>
       </div>
 
@@ -726,9 +759,9 @@
   <section id="skills">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">What I Know · Skills</span>
-        <h2>Everything a website developer needs — <em>I can do it</em></h2>
-        <p>From the first line of code to going live: the full skill set behind every website I build, fix and launch for clients.</p>
+        <span class="label" data-i18n="sec.skills">What I Know · Skills</span>
+        <h2 data-i18n-html="h2.skills">Everything a website developer needs — <em>I can do it</em></h2>
+        <p data-i18n="p.skills">From the first line of code to going live: the full skill set behind every website I build, fix and launch for clients.</p>
       </div>
       <div class="know-grid">
         <article class="know reveal">
@@ -799,65 +832,65 @@
   <section id="services">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">Services</span>
-        <h2>Everything a small business needs to <em>sell online</em></h2>
-        <p>No bloated packages, no tech jargon. Pick what your business needs — every site is built phone-first, because that's where your customers are.</p>
+        <span class="label" data-i18n="sec.services">Services</span>
+        <h2 data-i18n-html="h2.services">Everything a small business needs to <em>sell online</em></h2>
+        <p data-i18n="p.services">No bloated packages, no tech jargon. Pick what your business needs — every site is built phone-first, because that's where your customers are.</p>
       </div>
       <div class="svc-grid">
         <article class="svc reveal">
           <span class="svc-num">/ 01</span>
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></svg></div>
-          <h3>Business Website</h3>
-          <p>A complete online home for your business — services, prices, photos, location and reviews, all in one place that works day and night.</p>
+          <h3 data-i18n="svc.1t">Business Website</h3>
+          <p data-i18n="svc.1p">A complete online home for your business — services, prices, photos, location and reviews, all in one place that works day and night.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Up to 6 pages (Home, Services, Gallery, About, Contact…)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Click-to-call &amp; <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp chat</a> button</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Google Map, opening hours &amp; customer reviews</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Contact form that lands straight in your inbox</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.1li1">Up to 6 pages (Home, Services, Gallery, About, Contact…)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n-html="svc.1li2">Click-to-call &amp; <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp chat</a> button</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.1li3">Google Map, opening hours &amp; customer reviews</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.1li4">Contact form that lands straight in your inbox</span></li>
           </ul>
-          <div class="svc-price"><span>from</span><b>৳3,500</b><span>· $28</span></div>
+          <div class="svc-price"><span data-i18n="svc.from">from</span><b>৳3,500</b><span>· $28</span></div>
         </article>
 
         <article class="svc reveal">
           <div class="svc-num">/ 02</div>
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
-          <h3>Landing Page</h3>
-          <p>One sharp page built for a single goal — an offer, an admission campaign, a product launch or a Facebook ad that needs somewhere to land.</p>
+          <h3 data-i18n="svc.2t">Landing Page</h3>
+          <p data-i18n="svc.2p">One sharp page built for a single goal — an offer, an admission campaign, a product launch or a Facebook ad that needs somewhere to land.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Headline &amp; copy structured to convert</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Lead form, call button or booking button</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Loads in under a second — ads cost less</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Delivered in 2–3 days</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.2li1">Headline &amp; copy structured to convert</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.2li2">Lead form, call button or booking button</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.2li3">Loads in under a second — ads cost less</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.2li4">Delivered in 2–3 days</span></li>
           </ul>
-          <div class="svc-price"><span>from</span><b>৳2,500</b><span>· $20</span></div>
+          <div class="svc-price"><span data-i18n="svc.from">from</span><b>৳2,500</b><span>· $20</span></div>
         </article>
 
         <article class="svc reveal">
           <div class="svc-num">/ 03</div>
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 1.7h-9A2 2 0 0 1 5.5 18L4 7z"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg></div>
-          <h3>Online Shop</h3>
-          <p>Sell products from your own store instead of chasing comments and inbox messages. Orders come to you organised and ready to deliver.</p>
+          <h3 data-i18n="svc.3t">Online Shop</h3>
+          <p data-i18n="svc.3p">Sell products from your own store instead of chasing comments and inbox messages. Orders come to you organised and ready to deliver.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Product catalogue with photos, sizes &amp; prices</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Order via <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp</a> or online checkout</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Cash on delivery &amp; bKash payment options</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Training video so you can add products yourself</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.3li1">Product catalogue with photos, sizes &amp; prices</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n-html="svc.3li2">Order via <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp</a> or online checkout</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.3li3">Cash on delivery &amp; bKash payment options</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.3li4">Training video so you can add products yourself</span></li>
           </ul>
-          <div class="svc-price"><span>from</span><b>৳9,000</b><span>· $73</span></div>
+          <div class="svc-price"><span data-i18n="svc.from">from</span><b>৳9,000</b><span>· $73</span></div>
         </article>
 
         <article class="svc reveal">
           <div class="svc-num">/ 04</div>
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/></svg></div>
-          <h3>Redesign &amp; Fixes</h3>
-          <p>Already have a website that looks dated, loads slowly or breaks on phones? I'll rebuild it properly — or fix what's broken, fast.</p>
+          <h3 data-i18n="svc.4t">Redesign &amp; Fixes</h3>
+          <p data-i18n="svc.4p">Already have a website that looks dated, loads slowly or breaks on phones? I'll rebuild it properly — or fix what's broken, fast.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Full mobile &amp; speed audit first — free</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Modern redesign keeping your content &amp; domain</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Bug fixes, broken forms &amp; layout repairs</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Before / after report so you see the difference</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.4li1">Full mobile &amp; speed audit first — free</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.4li2">Modern redesign keeping your content &amp; domain</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.4li3">Bug fixes, broken forms &amp; layout repairs</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="svc.4li4">Before / after report so you see the difference</span></li>
           </ul>
-          <div class="svc-price"><span>from</span><b>৳3,000</b><span>· $24</span></div>
+          <div class="svc-price"><span data-i18n="svc.from">from</span><b>৳3,000</b><span>· $24</span></div>
         </article>
       </div>
     </div>
@@ -867,17 +900,17 @@
   <section id="work" class="work-sec">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">My Work / Demo Websites</span>
-        <h2>Live demos — <em>click &amp; explore them yourself</em></h2>
-        <p>These are working demo websites I built to show exactly what your business would get. Tap “Live Demo Dekhun” on any card to open the real, working demo — then imagine it with your name, your photos and your prices. Filter by your business type.</p>
+        <span class="label" data-i18n="sec.work">My Work / Demo Websites</span>
+        <h2 data-i18n-html="h2.work">Live demos — <em>click &amp; explore them yourself</em></h2>
+        <p data-i18n="p.work">These are working demo websites I built to show exactly what your business would get. Tap “Live Demo Dekhun” on any card to open the real, working demo — then imagine it with your name, your photos and your prices. Filter by your business type.</p>
       </div>
       <div class="filters reveal" role="group" aria-label="Filter projects">
-        <button class="filter-btn on" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="food">Restaurant &amp; Food</button>
-        <button class="filter-btn" data-filter="beauty">Beauty &amp; Salon</button>
-        <button class="filter-btn" data-filter="education">Education</button>
-        <button class="filter-btn" data-filter="shop">Retail &amp; Shop</button>
-        <button class="filter-btn" data-filter="webapp">Web App</button>
+        <button class="filter-btn on" data-filter="all" data-i18n="work.all">All Projects</button>
+        <button class="filter-btn" data-filter="food" data-i18n="work.food">Restaurant &amp; Food</button>
+        <button class="filter-btn" data-filter="beauty" data-i18n="work.beauty">Beauty &amp; Salon</button>
+        <button class="filter-btn" data-filter="education" data-i18n="work.edu">Education</button>
+        <button class="filter-btn" data-filter="shop" data-i18n="work.shop">Retail &amp; Shop</button>
+        <button class="filter-btn" data-filter="webapp" data-i18n="work.webapp">Web App</button>
       </div>
       <div class="work-grid" id="workGrid">
 
@@ -1006,30 +1039,30 @@
   <section class="band">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">Why Work With Me</span>
-        <h2>A freelancer who works like a <em>studio</em></h2>
-        <p>You get agency-level polish and process — without the agency price, the waiting, or talking to five different people.</p>
+        <span class="label" data-i18n="sec.why">Why Work With Me</span>
+        <h2 data-i18n-html="h2.why">A freelancer who works like a <em>studio</em></h2>
+        <p data-i18n="p.why">You get agency-level polish and process — without the agency price, the waiting, or talking to five different people.</p>
       </div>
       <div class="why-grid">
         <div class="why reveal">
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18.5h.01"/></svg></div>
-          <h3>Mobile-first, always</h3>
-          <p>Over 90% of your customers will visit on a phone. Every layout is designed for the small screen first, then scaled up.</p>
+          <h3 data-i18n="why.1t">Mobile-first, always</h3>
+          <p data-i18n="why.1p">Over 90% of your customers will visit on a phone. Every layout is designed for the small screen first, then scaled up.</p>
         </div>
         <div class="why reveal">
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
-          <h3>Fast on real networks</h3>
-          <p>Lightweight pages that open quickly even on slow mobile data — because a site that takes 8 seconds to load loses the customer.</p>
+          <h3 data-i18n="why.2t">Fast on real networks</h3>
+          <p data-i18n="why.2p">Lightweight pages that open quickly even on slow mobile data — because a site that takes 8 seconds to load loses the customer.</p>
         </div>
         <div class="why reveal">
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-          <h3>Delivered in days</h3>
-          <p>Most sites launch in 3–5 working days. You see a live preview before final payment, with daily progress updates.</p>
+          <h3 data-i18n="why.3t">Delivered in days</h3>
+          <p data-i18n="why.3p">Most sites launch in 3–5 working days. You see a live preview before final payment, with daily progress updates.</p>
         </div>
         <div class="why reveal">
           <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4c-1.5 0-3-.4-4.2-1.1L3 20l1.3-5.1A8.4 8.4 0 1 1 21 11.5z"/></svg></div>
-          <h3>Support in your language</h3>
-          <p>Bangla or English — your choice. After launch you get 14 days of free support and a simple guide to update the site yourself.</p>
+          <h3 data-i18n="why.4t">Support in your language</h3>
+          <p data-i18n="why.4p">Bangla or English — your choice. After launch you get 14 days of free support and a simple guide to update the site yourself.</p>
         </div>
       </div>
     </div>
@@ -1039,34 +1072,34 @@
   <section id="process">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">How I Work</span>
-        <h2>From first message to launch in four steps</h2>
-        <p>A clear process, fixed price agreed before we start, and a live preview link so you always know exactly where your website stands.</p>
+        <span class="label" data-i18n="sec.process">How I Work</span>
+        <h2 data-i18n="h2.process">From first message to launch in four steps</h2>
+        <p data-i18n="p.process">A clear process, fixed price agreed before we start, and a live preview link so you always know exactly where your website stands.</p>
       </div>
       <div class="steps reveal">
         <div class="step">
           <div class="step-num">01</div>
-          <h3>Kotha — discuss</h3>
-          <p>Message me what you sell, who your customers are and 2–3 websites you like. I'll reply with honest advice and a fixed quote — free, no pressure.</p>
-          <span class="days">Day 1 · Free</span>
+          <h3 data-i18n="step.1t">Kotha — discuss</h3>
+          <p data-i18n="step.1p">Message me what you sell, who your customers are and 2–3 websites you like. I'll reply with honest advice and a fixed quote — free, no pressure.</p>
+          <span class="days" data-i18n="step.1d">Day 1 · Free</span>
         </div>
         <div class="step">
           <div class="step-num">02</div>
-          <h3>Design</h3>
-          <p>I design your homepage and send a live preview link. You review it on your own phone and tell me what to change — 2 revision rounds included.</p>
-          <span class="days">Day 2–3</span>
+          <h3 data-i18n="step.2t">Design</h3>
+          <p data-i18n="step.2p">I design your homepage and send a live preview link. You review it on your own phone and tell me what to change — 2 revision rounds included.</p>
+          <span class="days" data-i18n="step.2d">Day 2–3</span>
         </div>
         <div class="step">
           <div class="step-num">03</div>
-          <h3>Website banano</h3>
-          <p>Full site built with your photos, prices and content. Speed-checked, tested on phones and computers, and connected to <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp</a>, maps and forms.</p>
-          <span class="days">Day 3–5</span>
+          <h3 data-i18n="step.3t">Website banano</h3>
+          <p data-i18n-html="step.3p">Full site built with your photos, prices and content. Speed-checked, tested on phones and computers, and connected to <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp</a>, maps and forms.</p>
+          <span class="days" data-i18n="step.3d">Day 3–5</span>
         </div>
         <div class="step">
           <div class="step-num">04</div>
-          <h3>Launch</h3>
-          <p>Your site goes live on your domain. You get a short guide to update it yourself, plus 14 days of free support while you settle in.</p>
-          <span class="days">Day 5 · Live</span>
+          <h3 data-i18n="step.4t">Launch</h3>
+          <p data-i18n="step.4p">Your site goes live on your domain. You get a short guide to update it yourself, plus 14 days of free support while you settle in.</p>
+          <span class="days" data-i18n="step.4d">Day 5 · Live</span>
         </div>
       </div>
     </div>
@@ -1076,66 +1109,66 @@
   <section id="pricing" class="pricing-sec">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">Pricing</span>
-        <h2>Honest prices, <em>agreed before we start</em></h2>
-        <p>One-time payment. No monthly lock-in, no surprise charges. Pay 50% to start, 50% when your site is live and you're happy with it.</p>
+        <span class="label" data-i18n="sec.pricing">Pricing</span>
+        <h2 data-i18n-html="h2.pricing">Honest prices, <em>agreed before we start</em></h2>
+        <p data-i18n="p.pricing">One-time payment. No monthly lock-in, no surprise charges. Pay 50% to start, 50% when your site is live and you're happy with it.</p>
       </div>
       <div class="price-grid">
         <article class="tier reveal">
-          <h3>Starter</h3>
-          <p class="for">For new businesses that need a clean, credible online presence fast.</p>
+          <h3 data-i18n="tier.1t">Starter</h3>
+          <p class="for" data-i18n="tier.1for">For new businesses that need a clean, credible online presence fast.</p>
           <div class="amount"><b>৳3,500</b><span>one-time</span></div>
           <span class="amount-usd">≈ $28 for international clients</span>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Up to 5 pages</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Mobile-first responsive design</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp chat</a> &amp; click-to-call buttons</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Contact form + Google Map</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Delivery in 3 days</li>
-            <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Photo gallery &amp; booking system</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.1li1">Up to 5 pages</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.1li2">Mobile-first responsive design</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n-html="tier.1li3"><a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp chat</a> &amp; click-to-call buttons</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.1li4">Contact form + Google Map</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.1li5">Delivery in 3 days</span></li>
+            <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg><span data-i18n="tier.1li6">Photo gallery &amp; booking system</span></li>
           </ul>
-          <a class="btn btn-ghost" href="#planner" data-plan="Starter">Choose Starter</a>
+          <a class="btn btn-ghost" href="#planner" data-plan="Starter" data-i18n="tier.1btn">Choose Starter</a>
         </article>
 
         <article class="tier pop reveal">
-          <span class="pop-tag">Most Popular</span>
-          <h3>Business</h3>
-          <p class="for">For businesses ready to take orders, bookings and enquiries online.</p>
+          <span class="pop-tag" data-i18n="tier.2pop">Most Popular</span>
+          <h3 data-i18n="tier.2t">Business</h3>
+          <p class="for" data-i18n="tier.2for">For businesses ready to take orders, bookings and enquiries online.</p>
           <div class="amount"><b>৳6,500</b><span>one-time</span></div>
           <span class="amount-usd">≈ $52 for international clients</span>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Everything in Starter, plus:</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Up to 8 pages + photo gallery</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Booking / order form to <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Google reviews &amp; social links section</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Basic SEO so Google can find you</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>14 days free post-launch support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.2li1">Everything in Starter, plus:</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.2li2">Up to 8 pages + photo gallery</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n-html="tier.2li3">Booking / order form to <a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener">WhatsApp</a></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.2li4">Google reviews &amp; social links section</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.2li5">Basic SEO so Google can find you</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.2li6">14 days free post-launch support</span></li>
           </ul>
-          <a class="btn btn-cta" href="#planner" data-plan="Business">Choose Business</a>
+          <a class="btn btn-cta" href="#planner" data-plan="Business" data-i18n="tier.2btn">Choose Business</a>
         </article>
 
         <article class="tier reveal">
-          <h3>Premium / Shop</h3>
-          <p class="for">For online shops and growing brands that need the full selling setup.</p>
+          <h3 data-i18n="tier.3t">Premium / Shop</h3>
+          <p class="for" data-i18n="tier.3for">For online shops and growing brands that need the full selling setup.</p>
           <div class="amount"><b>৳12,000</b><span>one-time</span></div>
           <span class="amount-usd">≈ $97 for international clients</span>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Everything in Business, plus:</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Product catalogue (up to 50 products)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Online orders + cash on delivery setup</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Bangla + English (two languages)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>Training video for self-updates</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>30 days free post-launch support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.3li1">Everything in Business, plus:</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.3li2">Product catalogue (up to 50 products)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.3li3">Online orders + cash on delivery setup</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.3li4">Bangla + English (two languages)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.3li5">Training video for self-updates</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><span data-i18n="tier.3li6">30 days free post-launch support</span></li>
           </ul>
-          <a class="btn btn-ghost" href="#planner" data-plan="Premium / Shop">Choose Premium</a>
+          <a class="btn btn-ghost" href="#planner" data-plan="Premium / Shop" data-i18n="tier.3btn">Choose Premium</a>
         </article>
       </div>
       <div class="pay-row reveal">
-        <span class="pay-label">Payment — 50% advance, 50% at launch:</span>
+        <span class="pay-label" data-i18n="pay.label">Payment — 50% advance, 50% at launch:</span>
         <span class="pay-badge"><i style="background:#E2136E"></i>bKash</span>
         <span class="pay-badge"><i style="background:#F6921E"></i>Nagad</span>
       </div>
-      <p class="price-note reveal">Need something different — a single landing page, a fix, a bigger system? <a href="#planner">Use the price calculator below</a> or message me for a custom quote.</p>
+      <p class="price-note reveal" data-i18n-html="price.note">Need something different — a single landing page, a fix, a bigger system? <a href="#planner">Use the price calculator below</a> or message me for a custom quote.</p>
     </div>
   </section>
 
@@ -1143,21 +1176,21 @@
   <section id="planner">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">Instant Estimate</span>
-        <h2>Calculate your price in <em>30 seconds</em></h2>
-        <p>Answer three quick questions and get a realistic estimate instantly — no email needed, no sales calls. Final fixed quote is always confirmed before work starts.</p>
+        <span class="label" data-i18n="sec.planner">Instant Estimate</span>
+        <h2 data-i18n-html="h2.planner">Calculate your price in <em>30 seconds</em></h2>
+        <p data-i18n="p.planner">Answer three quick questions and get a realistic estimate instantly — no email needed, no sales calls. Final fixed quote is always confirmed before work starts.</p>
       </div>
       <div class="planner-grid">
         <div class="panel reveal">
-          <h3>Build your website</h3>
-          <p class="hint">Tap your options — the estimate updates live.</p>
+          <h3 data-i18n="pl.h3">Build your website</h3>
+          <p class="hint" data-i18n="pl.hint">Tap your options — the estimate updates live.</p>
 
           <div class="field">
-            <span class="flabel">1 · What kind of website do you need?</span>
+            <span class="flabel" data-i18n="pl.f1">1 · What kind of website do you need?</span>
             <div class="type-grid" id="typeGrid">
               <label class="type-opt">
                 <input type="radio" name="wtype" value="business" checked />
-                <span class="card"><b>Business Website</b><span>Full site for your company — ৳3,500 base</span></span>
+                <span class="card"><b>Business Website</b><span>Full site for your company — ৳6,500 base</span></span>
               </label>
               <label class="type-opt">
                 <input type="radio" name="wtype" value="landing" />
@@ -1175,16 +1208,16 @@
           </div>
 
           <div class="field">
-            <label for="pagesRange">2 · How many pages?</label>
+            <label for="pagesRange" data-i18n="pl.f2">2 · How many pages?</label>
             <div class="range-row">
               <input type="range" id="pagesRange" min="1" max="15" value="5" step="1" />
               <span class="range-val" id="pagesVal">5 pages</span>
             </div>
-            <p class="hint" style="margin:6px 0 0">First 5 pages are included. Extra pages +৳600 each.</p>
+            <p class="hint" style="margin:6px 0 0" data-i18n="pl.f2hint">First 5 pages are included. Extra pages +৳600 each.</p>
           </div>
 
           <div class="field" style="margin-bottom:0">
-            <span class="flabel">3 · Add the features you need</span>
+            <span class="flabel" data-i18n="pl.f3">3 · Add the features you need</span>
             <div class="feat-grid" id="featGrid">
               <label class="feat"><input type="checkbox" data-price="0" data-name="WhatsApp order / chat button" checked /><span><a class="wa-link" href="https://wa.me/8801315961760" target="_blank" rel="noopener" onclick="event.stopPropagation()"><b>WhatsApp button</b></a><span>Free — included in every site</span></span></label>
               <label class="feat"><input type="checkbox" data-price="800" data-name="Photo gallery" /><span><b>Photo gallery</b><span>+ ৳800</span></span></label>
@@ -1199,22 +1232,22 @@
         </div>
 
         <aside class="estimate reveal" aria-live="polite">
-          <span class="label">Your Estimate</span>
-          <div class="est-amount" id="estAmount">৳3,200 – ৳4,000</div>
-          <span class="est-usd" id="estUsd">≈ $26 – $32 USD</span>
+          <span class="label" data-i18n="sec.estimate">Your Estimate</span>
+          <div class="est-amount" id="estAmount">৳6,500 – ৳7,500</div>
+          <span class="est-usd" id="estUsd">≈ $52 – $60 USD</span>
           <div class="est-rows">
-            <div class="est-row"><span>Website type</span><b id="estType">Business Website</b></div>
-            <div class="est-row"><span>Pages</span><b id="estPages">5</b></div>
-            <div class="est-row"><span>Extra features</span><b id="estFeats">1 selected</b></div>
-            <div class="est-row"><span>Estimated delivery</span><b id="estDays">3–5 days</b></div>
-            <div class="est-row"><span>To start</span><b>50% advance only</b></div>
+            <div class="est-row"><span data-i18n="est.rowtype">Website type</span><b id="estType">Business Website</b></div>
+            <div class="est-row"><span data-i18n="est.rowpages">Pages</span><b id="estPages">5</b></div>
+            <div class="est-row"><span data-i18n="est.rowfeats">Extra features</span><b id="estFeats">1 selected</b></div>
+            <div class="est-row"><span data-i18n="est.rowdays">Estimated delivery</span><b id="estDays">3–5 days</b></div>
+            <div class="est-row"><span data-i18n="est.rowstart">To start</span><b>50% advance only</b></div>
           </div>
           <button class="btn btn-cta" id="copyEstimate" type="button">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            Copy This Estimate
+            <span data-i18n="est.copy">Copy This Estimate</span>
           </button>
-          <a class="btn btn-ghost" href="#contact" style="background:transparent;color:#EEF3F0;border-color:#3A4740;margin-top:10px">Send This as My Inquiry ↓</a>
-          <p class="est-fine">Estimate is a guide, not a contract. Your final fixed price is confirmed in writing before any payment.</p>
+          <a class="btn btn-ghost" href="#contact" style="background:transparent;color:#EEF3F0;border-color:#3A4740;margin-top:10px" data-i18n="est.send">Send This as My Inquiry ↓</a>
+          <p class="est-fine" data-i18n="est.fine">Estimate is a guide, not a contract. Your final fixed price is confirmed in writing before any payment.</p>
         </aside>
       </div>
     </div>
@@ -1224,8 +1257,8 @@
   <section style="padding-top:0">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">Toolbox</span>
-        <h2>Skills behind every build</h2>
+        <span class="label" data-i18n="sec.toolbox">Toolbox</span>
+        <h2 data-i18n="h2.toolbox">Skills behind every build</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-card reveal">
@@ -1248,33 +1281,33 @@
   <section id="faq" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="label">Questions</span>
-        <h2>Before you ask — the honest answers</h2>
+        <span class="label" data-i18n="sec.faq">Questions</span>
+        <h2 data-i18n="h2.faq">Before you ask — the honest answers</h2>
       </div>
       <div class="faq-list reveal">
         <div class="faq">
-          <button type="button" aria-expanded="false">How long will my website take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
-          <div class="faq-a"><p>A landing page takes 2–3 days, a standard business website 3–5 days, and an online shop 5–7 days. You'll get a live preview link early, so you can watch progress and request changes as we go — not just at the end.</p></div>
+          <button type="button" aria-expanded="false" data-i18n="faq.1q">How long will my website take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="faq.1a">A landing page takes 2–3 days, a standard business website 3–5 days, and an online shop 5–7 days. You'll get a live preview link early, so you can watch progress and request changes as we go — not just at the end.</p></div>
         </div>
         <div class="faq">
-          <button type="button" aria-expanded="false">How do I pay?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
-          <div class="faq-a"><p>In Bangladesh: bKash or Nagad. International clients: Payoneer or Fiverr/Upwork escrow. You pay 50% to start and the remaining 50% only when the finished site is live and you've approved it. No full payment upfront, ever.</p></div>
+          <button type="button" aria-expanded="false" data-i18n="faq.2q">How do I pay?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="faq.2a">In Bangladesh: bKash or Nagad. International clients: Payoneer or Fiverr/Upwork escrow. You pay 50% to start and the remaining 50% only when the finished site is live and you've approved it. No full payment upfront, ever.</p></div>
         </div>
         <div class="faq">
-          <button type="button" aria-expanded="false">What do you need from me to start?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
-          <div class="faq-a"><p>Very little: your business name, what you sell, your prices, some photos (phone photos are fine) and your WhatsApp number. Don't have a logo or written content yet? I can help with both — just mention it in your message.</p></div>
+          <button type="button" aria-expanded="false" data-i18n="faq.3q">What do you need from me to start?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="faq.3a">Very little: your business name, what you sell, your prices, some photos (phone photos are fine) and your WhatsApp number. Don't have a logo or written content yet? I can help with both — just mention it in your message.</p></div>
         </div>
         <div class="faq">
-          <button type="button" aria-expanded="false">What about domain and hosting costs?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
-          <div class="faq-a"><p>The website price is for design and build. A domain (your .com address) and hosting typically cost around ৳1,500–2,500 per year, paid directly to the provider in your own name — your site stays 100% yours. I'll set everything up for you and show you exactly what's what.</p></div>
+          <button type="button" aria-expanded="false" data-i18n="faq.4q">What about domain and hosting costs?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="faq.4a">The website price is for design and build. A domain (your .com address) and hosting typically cost around ৳1,500–2,500 per year, paid directly to the provider in your own name — your site stays 100% yours. I'll set everything up for you and show you exactly what's what.</p></div>
         </div>
         <div class="faq">
-          <button type="button" aria-expanded="false">Can I update the website myself later?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
-          <div class="faq-a"><p>Yes. Every site includes a simple written guide (and a training video on shop plans) covering how to change text, prices and photos. And if you'd rather not touch it, small updates after launch start from just ৳300.</p></div>
+          <button type="button" aria-expanded="false" data-i18n="faq.5q">Can I update the website myself later?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="faq.5a">Yes. Every site includes a simple written guide (and a training video on shop plans) covering how to change text, prices and photos. And if you'd rather not touch it, small updates after launch start from just ৳300.</p></div>
         </div>
         <div class="faq">
-          <button type="button" aria-expanded="false">What if I don't like the design?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
-          <div class="faq-a"><p>You approve the design from a live preview before the full build, and every package includes 2 rounds of revisions. If the first preview is completely off track, tell me before we proceed — I'd rather redesign early than hand over a site you don't love.</p></div>
+          <button type="button" aria-expanded="false" data-i18n="faq.6q">What if I don't like the design?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="faq.6a">You approve the design from a live preview before the full build, and every package includes 2 rounds of revisions. If the first preview is completely off track, tell me before we proceed — I'd rather redesign early than hand over a site you don't love.</p></div>
         </div>
       </div>
     </div>
@@ -1284,47 +1317,47 @@
   <section id="contact" class="contact-sec">
     <div class="wrap contact-grid">
       <div class="reveal">
-        <span class="label">Start a Project</span>
-        <h2>Let's build the website your business <em>deserves</em></h2>
-        <p class="lead">Fill in the short form and hit send — your message lands straight in my email inbox, marked <strong style="color:#F2EFE6">“From Portfolio”</strong> so I spot it instantly. I reply within 24 hours with honest advice and a fixed quote. No obligation.</p>
+        <span class="label" data-i18n="sec.contact">Start a Project</span>
+        <h2 data-i18n-html="h2.contact">Let's build the website your business <em>deserves</em></h2>
+        <p class="lead" data-i18n-html="ct.lead">Fill in the short form and hit send — your message lands straight in my email inbox, marked <strong style="color:#F2EFE6">“From Portfolio”</strong> so I spot it instantly. I reply within 24 hours with honest advice and a fixed quote. No obligation.</p>
         <div class="contact-points">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><div>Free quote &amp; honest advice<span>I'll tell you if you don't need something — even if it means a smaller sale.</span></div></div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><div>Reply within 24 hours<span>Usually much faster. Bangla or English — whichever you prefer.</span></div></div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><div>50% now, 50% at launch<span>The balance is due only when your site is live and approved by you.</span></div></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><div data-i18n-title="ct.p1t">Free quote &amp; honest advice<span data-i18n="ct.p1s">I'll tell you if you don't need something — even if it means a smaller sale.</span></div></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><div data-i18n-title="ct.p2t">Reply within 24 hours<span data-i18n="ct.p2s">Usually much faster. Bangla or English — whichever you prefer.</span></div></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg><div data-i18n-title="ct.p3t">50% now, 50% at launch<span data-i18n="ct.p3s">The balance is due only when your site is live and approved by you.</span></div></div>
         </div>
         <div class="mail-card">
-          <span>Email me directly</span>
+          <span data-i18n="ct.mail">Email me directly</span>
           <a href="mailto:ramjanalirayan@gmail.com?subject=%5BFrom%20Portfolio%5D%20Website%20inquiry">ramjanalirayan@gmail.com</a>
-          <p>Prefer your own email app? Write to me there — just keep “From Portfolio” in the subject so your mail stands out in my inbox.</p>
+          <p data-i18n="ct.mailp">Prefer your own email app? Write to me there — just keep “From Portfolio” in the subject so your mail stands out in my inbox.</p>
         </div>
       </div>
       <div class="inquiry reveal">
-        <h3>Project inquiry</h3>
+        <h3 data-i18n="ct.inq">Project inquiry</h3>
         <form id="inquiryForm" action="https://formsubmit.co/ramjanalirayan@gmail.com" method="POST" novalidate>
           <input type="hidden" name="_subject" value="[From Portfolio] New Project Inquiry" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="field" id="fNameField">
-            <label for="fName">Your name <span class="req">*</span></label>
-            <input type="text" id="fName" name="name" placeholder="e.g. Arif Rahman" autocomplete="name" />
+            <label for="fName"><span data-i18n="ct.lname">Your name</span> <span class="req">*</span></label>
+            <input type="text" id="fName" name="name" placeholder="e.g. Arif Rahman" data-i18n-ph="ph.name" autocomplete="name" />
             <span class="err">Please write your name so I know who I'm replying to.</span>
           </div>
           <div class="field" id="fEmailField">
-            <label for="fEmail">Your email <span class="req">*</span></label>
-            <input type="email" id="fEmail" name="email" placeholder="e.g. arif@gmail.com" autocomplete="email" inputmode="email" />
+            <label for="fEmail"><span data-i18n="ct.lemail">Your email</span> <span class="req">*</span></label>
+            <input type="email" id="fEmail" name="email" placeholder="e.g. arif@gmail.com" data-i18n-ph="ph.email" autocomplete="email" inputmode="email" />
             <span class="err">Please write a valid email — my reply will go to this address.</span>
           </div>
           <div class="field">
-            <label for="fPhone">WhatsApp / phone (optional)</label>
-            <input type="tel" id="fPhone" name="phone" placeholder="e.g. 01XXXXXXXXX" autocomplete="tel" inputmode="tel" />
+            <label for="fPhone" data-i18n="ct.lphone">WhatsApp / phone (optional)</label>
+            <input type="tel" id="fPhone" name="phone" placeholder="e.g. 01XXXXXXXXX" data-i18n-ph="ph.phone" autocomplete="tel" inputmode="tel" />
           </div>
           <div class="field">
-            <label for="fBiz">Your business</label>
-            <input type="text" id="fBiz" name="business" placeholder="e.g. Arif's Kitchen — restaurant, Uttara" />
+            <label for="fBiz" data-i18n="ct.lbiz">Your business</label>
+            <input type="text" id="fBiz" name="business" placeholder="e.g. Arif's Kitchen — restaurant, Uttara" data-i18n-ph="ph.biz" />
           </div>
           <div class="field">
-            <label for="fType">What do you need?</label>
+            <label for="fType" data-i18n="ct.ltype">What do you need?</label>
             <select id="fType" name="project_type">
               <option>Business Website</option>
               <option>Landing Page</option>
@@ -1334,7 +1367,7 @@
             </select>
           </div>
           <div class="field">
-            <label for="fBudget">Your budget range</label>
+            <label for="fBudget" data-i18n="ct.lbudget">Your budget range</label>
             <select id="fBudget" name="budget">
               <option>৳3,000 – ৳5,000</option>
               <option selected>৳5,000 – ৳8,000</option>
@@ -1344,20 +1377,20 @@
             </select>
           </div>
           <div class="field">
-            <label for="fMsg">Anything else? (optional)</label>
-            <textarea id="fMsg" name="message" placeholder="e.g. I need online booking and my menu in Bangla and English…"></textarea>
+            <label for="fMsg" data-i18n="ct.lmsg">Anything else? (optional)</label>
+            <textarea id="fMsg" name="message" placeholder="e.g. I need online booking and my menu in Bangla and English…" data-i18n-ph="ph.msg"></textarea>
           </div>
           <button class="btn btn-cta" type="submit" id="sendBtn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg>
-            <span id="sendBtnText">Send — Straight to My Inbox</span>
+            <span id="sendBtnText" data-i18n="ct.send">Send — Straight to My Inbox</span>
           </button>
           <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-          <p class="or">— or send it with your own email app —</p>
+          <p class="or" data-i18n="ct.or">— or send it with your own email app —</p>
           <a class="btn btn-mail" id="mailBtn" href="mailto:ramjanalirayan@gmail.com?subject=%5BFrom%20Portfolio%5D%20New%20inquiry">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            Email ramjanalirayan@gmail.com
+            <span data-i18n="ct.mailbtn">Email ramjanalirayan@gmail.com</span>
           </a>
-          <p class="form-note">Pressing <b>Send</b> delivers this form straight to <b>ramjanalirayan@gmail.com</b> — no email app opens — with the subject <b>[From Portfolio] New inquiry</b>.</p>
+          <p class="form-note" data-i18n-html="ct.note">Pressing <b>Send</b> delivers this form straight to <b>ramjanalirayan@gmail.com</b> — no email app opens — with the subject <b>[From Portfolio] New inquiry</b>.</p>
           <p class="activate-note"><b>Owner — one-time setup:</b> the first message sent from this form triggers an “Activate Form” email from FormSubmit to <b style="color:#F2EFE6">ramjanalirayan@gmail.com</b>. Open it (check Spam too) and click <b style="color:#F2EFE6">Activate</b> once — after that, every inquiry arrives in that inbox automatically, marked “From Portfolio”.</p>
         </form>
       </div>
@@ -1372,8 +1405,8 @@
       <span class="brand-mark">R</span>
       <span><span class="bname">Rayan</span><small>Web Designer &amp; Developer</small></span>
     </a>
-    <p>Based in Bangladesh · Working with clients worldwide · © 2026 Rayan</p>
-    <a href="#planner">Get a free quote →</a>
+    <p data-i18n="ft.1">Based in Bangladesh · Working with clients worldwide · © 2026 Rayan</p>
+    <a href="#planner" data-i18n="ft.2">Get a free quote →</a>
   </div>
 </footer>
 
@@ -1867,34 +1900,299 @@
   /* ---- marquee: duplicate strip content for seamless loop ---- */
   var track = $("#stripTrack");
   if (track) track.innerHTML += track.innerHTML;
+  /* ---- language toggle: English / Bangla ----
+     Dictionary approach: elements carry data-i18n (plain text),
+     data-i18n-html (text with markup), data-i18n-ph (placeholder) or
+     data-i18n-title (first text node only, for labels with a <span>).
+     English is the HTML as shipped (captured on load); Bangla strings
+     live in I18N_BN below — natural, simple Bangla, not word-for-word.
+     Choice persists in localStorage ("portfolio-lang"), default English. */
+  var I18N_BN = {
+    "nav.skills": "দক্ষতা",
+    "nav.work": "কাজ",
+    "nav.services": "সার্ভিস",
+    "nav.process": "যেভাবে কাজ করি",
+    "nav.pricing": "প্রাইস",
+    "nav.faq": "প্রশ্নোত্তর",
+    "nav.quote": "ফ্রি কোট পান",
+    "nav.contact": "যোগাযোগ",
+    "hero.avail": "নতুন প্রজেক্ট নিচ্ছি — নভেম্বর ২০২৬",
+    "hero.meta1": "বাংলাদেশে থাকি — সারা বিশ্বের ক্লায়েন্টের কাজ করি",
+    "hero.meta3": "২৪ ঘণ্টার মধ্যে উত্তর",
+    "hero.sub": "আমি <strong>রায়ান</strong>, বাংলাদেশের একজন ওয়েব ডিজাইনার ও ডেভেলপার। রেস্টুরেন্ট, সেলুন, দোকান আর কোচিং সেন্টারকে সাহায্য করি বেশি কল, অর্ডার আর বুকিং পেতে — দ্রুত, মোবাইল-ফার্স্ট ওয়েবসাইট দিয়ে, যা দেখতে বড় ব্র্যান্ডের মতো।",
+    "hero.cta1": "আমার কাজ দেখুন",
+    "hero.cta2": "আপনার প্রাইস হিসাব করুন",
+    "hero.stat1": "সাধারণ ডেলিভারি সময়",
+    "hero.stat2": "মোবাইলে পুরোপুরি চলে",
+    "hero.stat3": "ফ্রি রিভিশন সহ",
+    "hero.stat4": "বাংলা ও ইংরেজি সাপোর্ট",
+    "sec.skills": "আমি যা জানি · দক্ষতা",
+    "sec.services": "সার্ভিসসমূহ",
+    "sec.work": "আমার কাজ / ডেমো ওয়েবসাইট",
+    "sec.why": "আমার সাথে কেন কাজ করবেন",
+    "sec.process": "যেভাবে কাজ করি",
+    "sec.pricing": "প্রাইস",
+    "sec.planner": "তাৎক্ষণিক হিসাব",
+    "sec.toolbox": "টুলবক্স",
+    "sec.faq": "প্রশ্নোত্তর",
+    "sec.contact": "প্রজেক্ট শুরু করুন",
+    "sec.estimate": "আপনার হিসাব",
+    "h2.skills": "একজন ওয়েব ডেভেলপারের যা যা লাগে — <em>আমি সব পারি</em>",
+    "h2.services": "ছোট ব্যবসার অনলাইনে <em>বেচতে</em> যা যা লাগে",
+    "h2.work": "লাইভ ডেমো — <em>নিজে ক্লিক করে দেখুন</em>",
+    "h2.why": "একজন ফ্রিল্যান্সার, কাজ করেন <em>স্টুডিওর</em> মতো",
+    "h2.process": "প্রথম মেসেজ থেকে লঞ্চ পর্যন্ত চার ধাপে",
+    "h2.pricing": "সৎ প্রাইস, <em>কাজ শুরুর আগেই ঠিক</em>",
+    "h2.planner": "৩০ সেকেন্ডে <em>আপনার প্রাইস</em> হিসাব করুন",
+    "h2.toolbox": "প্রতিটি কাজের পেছনের দক্ষতা",
+    "h2.faq": "জিজ্ঞেস করার আগে — সৎ উত্তরগুলো",
+    "h2.contact": "চলুন আপনার ব্যবসার জন্য <em>সেরা ওয়েবসাইট</em> বানাই",
+    "p.skills": "প্রথম লাইন কোড থেকে লাইভ হওয়া পর্যন্ত — আমার প্রতিটি ওয়েবসাইটের পেছনে এই পুরো দক্ষতাই কাজ করে।",
+    "p.services": "অতিরিক্ত প্যাকেজ নয়, কঠিন ভাষা নয়। আপনার ব্যবসার যা দরকার সেটাই বেছে নিন — প্রতিটি সাইট ফোনের কথা মাথায় রেখে বানানো, কারণ আপনার কাস্টমাররাই সেখানেই আছে।",
+    "p.work": "এগুলো সত্যিকারের ডেমো ওয়েবসাইট, যা আমি বানিয়েছি — আপনার ব্যবসা পেলে কেমন হবে, সেটা দেখানোর জন্য। যেকোনো কার্ডে “Live Demo Dekhun” চাপ দিয়ে আসল ডেমো খুলুন — তারপর নিজের নাম, ছবি আর দাম দিয়ে কল্পনা করুন। আপনার ব্যবসার ধরন অনুযায়ী ফিল্টার করুন।",
+    "p.why": "এজেন্সির মতো নিখুঁত কাজ পাবেন — এজেন্সির দাম, অপেক্ষা, বা পাঁচজনের সাথে কথা বলার ঝামেলা ছাড়াই।",
+    "p.process": "পরিষ্কার প্রক্রিয়া, কাজ শুরুর আগেই ফিক্সড প্রাইস, আর লাইভ প্রিভিউ লিংক — যাতে আপনি সবসময় জানেন আপনার ওয়েবসাইট কোন পর্যায়ে আছে।",
+    "p.pricing": "একবারের পেমেন্ট। মাসিক কোনো চার্জ নেই, লুকানো খরচ নেই। শুরুতে 50% দিন, বাকি 50% দিন যখন সাইট লাইভ হবে আর আপনি খুশি হবেন।",
+    "p.planner": "তিনটি সহজ প্রশ্নের উত্তর দিন আর তাৎক্ষণিক একটা বাস্তবসম্মত হিসাব পান — ইমেইল লাগবে না, সেলস কল আসবে না। চূড়ান্ত ফিক্সড কোট কাজ শুরুর আগেই লিখিতভাবে জানিয়ে দেওয়া হবে।",
+    "work.all": "সব প্রজেক্ট",
+    "work.food": "রেস্টুরেন্ট ও খাবার",
+    "work.beauty": "বিউটি ও সেলুন",
+    "work.edu": "শিক্ষা",
+    "work.shop": "খুচরা ও শপ",
+    "work.webapp": "ওয়েব অ্যাপ",
+    "why.1t": "সবসময় মোবাইল-ফার্স্ট",
+    "why.1p": "আপনার 90% কাস্টমার ফোনে আসবে। প্রতিটি লেআউট প্রথমে ছোট স্ক্রিনের জন্য ডিজাইন করা হয়, তারপর বড় করা হয়।",
+    "why.2t": "আসল নেটওয়ার্কেও দ্রুত",
+    "why.2p": "হালকা পেজ, ধীর মোবাইল ডেটাতেও দ্রুত খোলে — কারণ ৮ সেকেন্ড লাগলে কাস্টমার চলে যায়।",
+    "why.3t": "দিনের মধ্যে ডেলিভারি",
+    "why.3p": "বেশিরভাগ সাইট ৩–৫ কর্মদিবসে লঞ্চ হয়। পুরো পেমেন্টের আগেই লাইভ প্রিভিউ দেখতে পাবেন, প্রতিদিন আপডেটসহ।",
+    "why.4t": "আপনার ভাষায় সাপোর্ট",
+    "why.4p": "বাংলা বা ইংরেজি — আপনার পছন্দ। লঞ্চের পর ১৪ দিন ফ্রি সাপোর্ট আর নিজে আপডেট করার সহজ গাইড পাবেন।",
+    "step.1t": "কথা — আলোচনা",
+    "step.1p": "আপনি কী বেচেন, আপনার কাস্টমার কারা, আর পছন্দের ২–৩টা ওয়েবসাইট মেসেজ করুন। আমি সৎ পরামর্শ আর ফিক্সড কোট দেব — ফ্রি, কোনো চাপ নেই।",
+    "step.1d": "দিন ১ · ফ্রি",
+    "step.2t": "ডিজাইন",
+    "step.2p": "আমি আপনার হোমপেজ ডিজাইন করে লাইভ প্রিভিউ লিংক পাঠাব। নিজের ফোনে দেখে জানাবেন কী বদলাতে হবে — ২ রাউন্ড রিভিশন অন্তর্ভুক্ত।",
+    "step.2d": "দিন ২–৩",
+    "step.3t": "ওয়েবসাইট বানানো",
+    "step.3p": "আপনার ছবি, দাম আর কনটেন্ট দিয়ে পুরো সাইট বানানো হবে। স্পিড চেক, ফোন ও কম্পিউটারে টেস্ট, আর <a class=\"wa-link\" href=\"https://wa.me/8801315961760\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>, ম্যাপ ও ফর্ম যুক্ত করা হবে।",
+    "step.3d": "দিন ৩–৫",
+    "step.4t": "লঞ্চ",
+    "step.4p": "আপনার সাইট আপনার ডোমেইনে লাইভ হবে। নিজে আপডেট করার ছোট গাইড পাবেন, আর মানিয়ে নেওয়ার সময় ১৪ দিন ফ্রি সাপোর্ট।",
+    "step.4d": "দিন ৫ · লাইভ",
+    "svc.1t": "বিজনেস ওয়েবসাইট",
+    "svc.1p": "আপনার ব্যবসার সম্পূর্ণ অনলাইন ঠিকানা — সার্ভিস, দাম, ছবি, লোকেশন আর রিভিউ, সব এক জায়গায়, দিনরাত কাজ করে।",
+    "svc.1li1": "৬ পৃষ্ঠা পর্যন্ত (হোম, সার্ভিস, গ্যালারি, আমাদের সম্পর্কে, যোগাযোগ…)",
+    "svc.1li2": "কল বাটন ও <a class=\"wa-link\" href=\"https://wa.me/8801315961760\" target=\"_blank\" rel=\"noopener\">WhatsApp চ্যাট</a> বাটন",
+    "svc.1li3": "Google Map, খোলার সময় ও কাস্টমার রিভিউ",
+    "svc.1li4": "যোগাযোগ ফর্ম — মেসেজ সরাসরি আপনার ইনবক্সে আসবে",
+    "svc.2t": "ল্যান্ডিং পেজ",
+    "svc.2p": "একটাই লক্ষ্যে বানানো ধারালো এক পৃষ্ঠা — কোনো অফার, ভর্তি ক্যাম্পেইন, প্রোডাক্ট লঞ্চ, বা ফেসবুক অ্যাডের জন্য।",
+    "svc.2li1": "হেডলাইন ও লেখা সাজানো হয় কাস্টমার যাতে যোগাযোগ করে",
+    "svc.2li2": "লিড ফর্ম, কল বাটন বা বুকিং বাটন",
+    "svc.2li3": "এক সেকেন্ডের কমে খোলে — অ্যাডের খরচ কমে",
+    "svc.2li4": "২–৩ দিনে ডেলিভারি",
+    "svc.3t": "অনলাইন শপ",
+    "svc.3p": "কমেন্ট আর ইনবক্সের পেছনে না ছুটে নিজের দোকান থেকে বিক্রি করুন। অর্ডার আসবে গোছানোভাবে, ডেলিভারির জন্য তৈরি।",
+    "svc.3li1": "ছবি, সাইজ ও দামসহ প্রোডাক্ট ক্যাটালগ",
+    "svc.3li2": "<a class=\"wa-link\" href=\"https://wa.me/8801315961760\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>-এ অর্ডার বা অনলাইন চেকআউট",
+    "svc.3li3": "ক্যাশ অন ডেলিভারি ও বিকাশ পেমেন্ট",
+    "svc.3li4": "ট্রেনিং ভিডিও — নিজেই প্রোডাক্ট যোগ করতে পারবেন",
+    "svc.4t": "রিডিজাইন ও সমস্যার সমাধান",
+    "svc.4p": "আপনার ওয়েবসাইট কি পুরনো দেখায়, ধীরে খোলে, বা ফোনে ভেঙে যায়? আমি ঠিকভাবে আবার বানিয়ে দেব — বা সমস্যাটা দ্রুত ঠিক করে দেব।",
+    "svc.4li1": "প্রথমে পুরো মোবাইল ও স্পিড অডিট — ফ্রি",
+    "svc.4li2": "আপনার কনটেন্ট ও ডোমেইন রেখেই আধুনিক রিডিজাইন",
+    "svc.4li3": "বাগ ঠিক করা, ভাঙা ফর্ম ও লেআউট মেরামত",
+    "svc.4li4": "আগে/পরে রিপোর্ট — পার্থক্যটা নিজেই দেখবেন",
+    "svc.from": "শুরু",
+    "tier.1t": "স্টার্টার",
+    "tier.1for": "নতুন ব্যবসার জন্য, যাদের দ্রুত একটা পরিষ্কার, বিশ্বাসযোগ্য অনলাইন পরিচয় দরকার।",
+    "tier.1li1": "৫ পৃষ্ঠা পর্যন্ত",
+    "tier.1li2": "মোবাইল-ফার্স্ট রেসপন্সিভ ডিজাইন",
+    "tier.1li3": "<a class=\"wa-link\" href=\"https://wa.me/8801315961760\" target=\"_blank\" rel=\"noopener\">WhatsApp চ্যাট</a> ও কল বাটন",
+    "tier.1li4": "যোগাযোগ ফর্ম + Google Map",
+    "tier.1li5": "৩ দিনে ডেলিভারি",
+    "tier.1li6": "ছবির গ্যালারি ও বুকিং সিস্টেম",
+    "tier.1btn": "স্টার্টার নিন",
+    "tier.2t": "বিজনেস",
+    "tier.2for": "যেসব ব্যবসা অনলাইনে অর্ডার, বুকিং আর খোঁজখবর নিতে প্রস্তুত।",
+    "tier.2li1": "স্টার্টারের সবকিছু, আরও:",
+    "tier.2li2": "৮ পৃষ্ঠা পর্যন্ত + ছবির গ্যালারি",
+    "tier.2li3": "বুকিং / অর্ডার ফর্ম — <a class=\"wa-link\" href=\"https://wa.me/8801315961760\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>-এ যাবে",
+    "tier.2li4": "Google রিভিউ ও সোশ্যাল লিংক সেকশন",
+    "tier.2li5": "বেসিক SEO — Google যাতে খুঁজে পায়",
+    "tier.2li6": "১৪ দিন ফ্রি লঞ্চ-পরবর্তী সাপোর্ট",
+    "tier.2btn": "বিজনেস নিন",
+    "tier.2pop": "সবচেয়ে জনপ্রিয়",
+    "tier.3t": "প্রিমিয়াম / শপ",
+    "tier.3for": "অনলাইন শপ আর বড় হতে থাকা ব্র্যান্ডের জন্য — বিক্রির পুরো সেটআপ।",
+    "tier.3li1": "বিজনেসের সবকিছু, আরও:",
+    "tier.3li2": "প্রোডাক্ট ক্যাটালগ (৫০টি পর্যন্ত প্রোডাক্ট)",
+    "tier.3li3": "অনলাইন অর্ডার + ক্যাশ অন ডেলিভারি সেটআপ",
+    "tier.3li4": "বাংলা + ইংরেজি (দুই ভাষা)",
+    "tier.3li5": "নিজে আপডেট করার ট্রেনিং ভিডিও",
+    "tier.3li6": "৩০ দিন ফ্রি লঞ্চ-পরবর্তী সাপোর্ট",
+    "tier.3btn": "প্রিমিয়াম নিন",
+    "pay.label": "পেমেন্ট — 50% অগ্রিম, 50% লঞ্চের সময়:",
+    "price.note": "অন্য কিছু চাই — একটা ল্যান্ডিং পেজ, কোনো ফিক্স, বা বড় সিস্টেম? <a href=\"#planner\">নিচের প্রাইস ক্যালকুলেটর ব্যবহার করুন</a> বা কাস্টম কোটের জন্য মেসেজ করুন।",
+    "pl.h3": "আপনার ওয়েবসাইট বানান",
+    "pl.hint": "অপশনগুলোতে ট্যাপ করুন — হিসাব সাথে সাথে আপডেট হবে।",
+    "pl.f1": "১ · আপনার কী ধরনের ওয়েবসাইট দরকার?",
+    "pl.f2": "২ · কয় পৃষ্ঠা?",
+    "pl.f2hint": "প্রথম ৫ পৃষ্ঠা অন্তর্ভুক্ত। অতিরিক্ত প্রতি পৃষ্ঠা +৳600।",
+    "pl.f3": "৩ · আপনার কী কী ফিচার দরকার?",
+    "est.rowtype": "ওয়েবসাইটের ধরন",
+    "est.rowpages": "পৃষ্ঠা",
+    "est.rowfeats": "অতিরিক্ত ফিচার",
+    "est.rowdays": "আনুমানিক ডেলিভারি",
+    "est.rowstart": "শুরু করতে",
+    "est.copy": "এই হিসাব কপি করুন",
+    "est.send": "এই হিসাব দিয়েই খোঁজ পাঠান ↓",
+    "est.fine": "এই হিসাব শুধু ধারণা দেওয়ার জন্য, চুক্তি নয়। চূড়ান্ত ফিক্সড প্রাইস পেমেন্টের আগেই লিখিতভাবে জানিয়ে দেওয়া হবে।",
+    "faq.1q": "আমার ওয়েবসাইট বানাতে কতদিন লাগবে?",
+    "faq.1a": "ল্যান্ডিং পেজ ২–৩ দিন, সাধারণ বিজনেস ওয়েবসাইট ৩–৫ দিন, আর অনলাইন শপ ৫–৭ দিন। শুরুতেই লাইভ প্রিভিউ লিংক পাবেন, তাই অগ্রগতি দেখতে পারবেন আর মাঝপথে বদলাতে বলতে পারবেন।",
+    "faq.2q": "আমি কীভাবে পেমেন্ট করব?",
+    "faq.2a": "বাংলাদেশে: বিকাশ বা নগদ। বিদেশি ক্লায়েন্ট: Payoneer বা Fiverr/Upwork এসক্রো। শুরুতে 50% দেবেন, বাকি 50% দেবেন শুধু যখন সাইট লাইভ হবে আর আপনি অনুমোদন দেবেন। পুরো পেমেন্ট আগে কখনোই নয়।",
+    "faq.3q": "শুরু করতে আপনার আমার কাছ থেকে কী লাগবে?",
+    "faq.3a": "খুব অল্প: আপনার ব্যবসার নাম, কী বেচেন, দাম, কিছু ছবি (ফোনের ছবি হলেও চলবে) আর আপনার WhatsApp নম্বর। লোগো বা লেখা এখনো নেই? দুটোতেই সাহায্য করতে পারব — মেসেজে জানাবেন।",
+    "faq.4q": "ডোমেইন আর হোস্টিং খরচ কেমন?",
+    "faq.4a": "ওয়েবসাইটের দাম শুধু ডিজাইন আর বানানোর জন্য। ডোমেইন (আপনার .com ঠিকানা) আর হোস্টিং সাধারণত বছরে ৳1,500–2,500 লাগে, সরাসরি প্রোভাইডারকে আপনার নামে দিতে হয় — সাইট 100% আপনারই থাকে। আমি সব সেট করে দেব আর কী কী আছে বুঝিয়ে দেব।",
+    "faq.5q": "পরে কি নিজে ওয়েবসাইট আপডেট করতে পারব?",
+    "faq.5a": "হ্যাঁ। প্রতিটি সাইটে লেখা, দাম আর ছবি বদলানোর সহজ লিখিত গাইড থাকে (শপ প্ল্যানে ট্রেনিং ভিডিওসহ)। আর নিজে করতে না চাইলে, ছোট আপডেট মাত্র ৳300 থেকে শুরু।",
+    "faq.6q": "ডিজাইন পছন্দ না হলে কী হবে?",
+    "faq.6a": "পুরো বানানোর আগে লাইভ প্রিভিউ দেখে ডিজাইন অনুমোদন করবেন, আর প্রতিটি প্যাকেজে ২ রাউন্ড রিভিশন আছে। প্রথম প্রিভিউ একদম ঠিক না হলে এগোনোর আগেই বলুন — আপনার অপছন্দের সাইট দেওয়ার চেয়ে আগেই নতুন করে ডিজাইন করতেই আমি খুশি হব।",
+    "ct.lead": "ছোট ফর্মটি পূরণ করে পাঠান — আপনার মেসেজ সরাসরি আমার ইমেইল ইনবক্সে যাবে, <strong style=\"color:#F2EFE6\">“From Portfolio”</strong> লেখা থাকবে যাতে আমি সাথে সাথে চিনতে পারি। ২৪ ঘণ্টার মধ্যে সৎ পরামর্শ আর ফিক্সড কোটসহ উত্তর দেব। কোনো বাধ্যবাধকতা নেই।",
+    "ct.p1t": "ফ্রি কোট ও সৎ পরামর্শ",
+    "ct.p1s": "দরকার নেই এমন কিছু থাকলে সেটা বলেই দেব — তাতে বিক্রি কম হলেও।",
+    "ct.p2t": "২৪ ঘণ্টার মধ্যে উত্তর",
+    "ct.p2s": "সাধারণত আরও অনেক দ্রুত। বাংলা বা ইংরেজি — যেটা আপনার পছন্দ।",
+    "ct.p3t": "50% এখন, 50% লঞ্চের সময়",
+    "ct.p3s": "বাকি টাকা দিতে হবে শুধু যখন সাইট লাইভ হবে আর আপনি অনুমোদন দেবেন।",
+    "ct.mail": "সরাসরি ইমেইল করুন",
+    "ct.mailp": "নিজের ইমেইল অ্যাপ দিয়ে পাঠাতে চান? সেখান থেকেই লিখুন — শুধু সাবজেক্টে “From Portfolio” লিখে রাখবেন, যাতে ইনবক্সে আপনার মেইল চোখে পড়ে।",
+    "ct.inq": "প্রজেক্টের খোঁজখবর",
+    "ct.lname": "আপনার নাম",
+    "ct.lemail": "আপনার ইমেইল",
+    "ct.lphone": "WhatsApp / ফোন (ঐচ্ছিক)",
+    "ct.lbiz": "আপনার ব্যবসা",
+    "ct.ltype": "আপনার কী দরকার?",
+    "ct.lbudget": "আপনার বাজেট",
+    "ct.lmsg": "আর কিছু বলার আছে? (ঐচ্ছিক)",
+    "ct.send": "পাঠান — সরাসরি আমার ইনবক্সে",
+    "ct.or": "— অথবা নিজের ইমেইল অ্যাপ দিয়ে পাঠান —",
+    "ct.mailbtn": "ramjanalirayan@gmail.com-এ ইমেইল করুন",
+    "ct.note": "<b>Send</b> চাপ দিলে এই ফর্ম সরাসরি <b>ramjanalirayan@gmail.com</b>-এ যাবে — কোনো ইমেইল অ্যাপ খুলবে না — সাবজেক্ট হবে <b>[From Portfolio] New inquiry</b>।",
+    "ph.name": "যেমন: আরিফ রহমান",
+    "ph.email": "যেমন: arif@gmail.com",
+    "ph.phone": "যেমন: 01XXXXXXXXX",
+    "ph.biz": "যেমন: আরিফ'স কিচেন — রেস্টুরেন্ট, উত্তরা",
+    "ph.msg": "যেমন: আমার অনলাইন বুকিং দরকার আর মেনু বাংলা ও ইংরেজিতে চাই…",
+    "ft.1": "বাংলাদেশে থাকি · সারা বিশ্বের ক্লায়েন্টের সাথে কাজ করি · © ২০২৬ রায়ান",
+    "ft.2": "ফ্রি কোট পান →"
+  };
+  var I18N_KEY = "portfolio-lang";
+  var langCur = "en";
+  try { var _storedLang = localStorage.getItem(I18N_KEY); if (_storedLang === "bn" || _storedLang === "en") langCur = _storedLang; } catch (e) {}
+  var HERO_SVG = '<svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q 100 -2 198 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>';
+  var HERO_WORDS = {
+    en: [{ t: "I", w: "" }, { t: "build", w: "" }, { t: "websites", w: "" }, { t: "that", w: "" }, { t: "turn", w: "" }, { t: "visitors", w: "em" }, { t: "into", w: "" }, { t: "customers", w: "hl" }],
+    bn: [{ t: "আমি", w: "" }, { t: "এমন", w: "" }, { t: "ওয়েবসাইট", w: "" }, { t: "বানাই", w: "" }, { t: "যা", w: "" }, { t: "ভিজিটরদের", w: "em" }, { t: "কাস্টমারে", w: "hl" }, { t: "পরিণত", w: "" }, { t: "করে", w: "" }]
+  };
+  var heroLang = langCur;
+  function heroWordsHTML(lang, count){
+    var ws = HERO_WORDS[lang] || HERO_WORDS.en, html = "";
+    for (var j = 0; j < ws.length && j < count; j++){
+      var wd = ws[j], inner = wd.t;
+      if (wd.w === "em") inner = "<em>" + wd.t + "</em>";
+      else if (wd.w === "hl") inner = '<span class="hl">' + wd.t + HERO_SVG + "</span>";
+      html += (j ? " " : "") + inner;
+    }
+    return html;
+  }
+  function i18nKeyOf(el){
+    return el.getAttribute("data-i18n") || el.getAttribute("data-i18n-html") || el.getAttribute("data-i18n-ph");
+  }
+  function i18nOrig(el){
+    if (el.hasAttribute("data-i18n")) return el.textContent;
+    if (el.hasAttribute("data-i18n-html")) return el.innerHTML;
+    if (el.hasAttribute("data-i18n-ph")) return el.getAttribute("placeholder") || "";
+    return "";
+  }
+  function i18nSet(el, val){
+    if (el.hasAttribute("data-i18n")) el.textContent = val;
+    else if (el.hasAttribute("data-i18n-html")) el.innerHTML = val;
+    else if (el.hasAttribute("data-i18n-ph")) el.setAttribute("placeholder", val);
+  }
+  function i18nTitleOrig(el){
+    for (var n = el.firstChild; n; n = n.nextSibling){ if (n.nodeType === 3) return n.nodeValue; }
+    return "";
+  }
+  function i18nTitleSet(el, val){
+    for (var n = el.firstChild; n; n = n.nextSibling){ if (n.nodeType === 3){ n.nodeValue = val; return; } }
+  }
+  function captureI18n(){
+    $$("[data-i18n],[data-i18n-html],[data-i18n-ph]").forEach(function(el){
+      el.setAttribute("data-i18n-orig", i18nOrig(el));
+    });
+    $$("[data-i18n-title]").forEach(function(el){
+      el.setAttribute("data-i18n-title-orig", i18nTitleOrig(el));
+    });
+  }
+  function applyLang(lang){
+    langCur = (lang === "bn") ? "bn" : "en";
+    document.documentElement.setAttribute("lang", langCur);
+    $$("[data-i18n],[data-i18n-html],[data-i18n-ph]").forEach(function(el){
+      var key = i18nKeyOf(el);
+      var val = (langCur === "bn" && I18N_BN[key]) ? I18N_BN[key] : el.getAttribute("data-i18n-orig");
+      i18nSet(el, val);
+    });
+    $$("[data-i18n-title]").forEach(function(el){
+      var key = el.getAttribute("data-i18n-title");
+      var val = (langCur === "bn" && I18N_BN[key]) ? I18N_BN[key] : el.getAttribute("data-i18n-title-orig");
+      i18nTitleSet(el, val);
+    });
+    $$(".lang-opt").forEach(function(b){
+      var on = b.getAttribute("data-lang") === langCur;
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    heroLang = langCur;
+    if (window.__heroSetLang) window.__heroSetLang(langCur);
+    else if (reduceMotion){
+      var h1 = document.querySelector(".hero h1");
+      if (h1) h1.innerHTML = heroWordsHTML(langCur, 99);
+    }
+    try { localStorage.setItem(I18N_KEY, langCur); } catch (e) {}
+  }
+  $$(".lang-opt").forEach(function(b){
+    b.addEventListener("click", function(){ applyLang(b.getAttribute("data-lang")); });
+  });
+  captureI18n();
+  applyLang(langCur);
+
   /* ---- hero headline typing effect ----
      Progressive enhancement: the full headline stays in the HTML, so it is
      always visible with JS off or if this code fails. With JS on, the
-     headline types out word by word in a loop, with a blinking caret. */
+     headline types out word by word in a loop, with a blinking caret.
+     Language-aware: words come from HERO_WORDS[heroLang], and the language
+     toggle restarts the typing via window.__heroSetLang. */
   (function(){
     var h1 = document.querySelector(".hero h1");
-    if (!h1 || reduceMotion) return;
-    var svg = '<svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q 100 -2 198 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>';
-    var words = [
-      { t: "I", w: "" }, { t: "build", w: "" }, { t: "websites", w: "" },
-      { t: "that", w: "" }, { t: "turn", w: "" }, { t: "visitors", w: "em" },
-      { t: "into", w: "" }, { t: "customers", w: "hl" }
-    ];
+    if (!h1) return;
+    if (reduceMotion){ h1.innerHTML = heroWordsHTML(heroLang, 99); return; }
     var i = 0, timer = null;
+    function words(){ return HERO_WORDS[heroLang] || HERO_WORDS.en; }
     function render(){
-      var html = "";
-      for (var j = 0; j < i; j++){
-        var wd = words[j], inner = wd.t;
-        if (wd.w === "em") inner = "<em>" + wd.t + "</em>";
-        else if (wd.w === "hl") inner = '<span class="hl">' + wd.t + svg + "</span>";
-        html += (j ? " " : "") + inner;
-      }
-      h1.innerHTML = html + '<span class="type-caret" aria-hidden="true"></span>';
+      h1.innerHTML = heroWordsHTML(heroLang, i) + '<span class="type-caret" aria-hidden="true"></span>';
     }
     function tick(){
-      if (i < words.length){ i++; render(); timer = setTimeout(tick, 300); }
+      if (i < words().length){ i++; render(); timer = setTimeout(tick, 300); }
       else { timer = setTimeout(function(){ i = 0; render(); timer = setTimeout(tick, 700); }, 2800); }
     }
+    window.__heroSetLang = function(lang){
+      heroLang = lang;
+      i = 0; clearTimeout(timer); render(); timer = setTimeout(tick, 600);
+    };
     render();
     timer = setTimeout(tick, 600);
   })();
@@ -2007,7 +2305,7 @@
   /* USD conversion rate — update this one number when the rate changes. */
   var BDT_PER_USD = 124;
   var BASE = {
-    business: { price: 3500, label: "Business Website", days: "3–5 days" },
+    business: { price: 6500, label: "Business Website", days: "3–5 days" },
     landing:  { price: 2500, label: "Landing Page",     days: "2–3 days" },
     shop:     { price: 9000, label: "Online Shop",      days: "5–7 days" },
     redesign: { price: 3000, label: "Redesign / Fix",   days: "3–4 days" }
@@ -2027,6 +2325,9 @@
     var total = base.price + extraPages + featTotal;
     var low = Math.round(total * 0.9 / 100) * 100;
     var high = Math.round(total * 1.15 / 100) * 100;
+    /* The estimate never starts below the type's own starting price
+       (Business Website = the ৳6,500 BUSINESS package). */
+    if (low < base.price) low = base.price;
     $("#estAmount").textContent = fmt(low) + " – " + fmt(high);
     $("#estUsd").textContent = "≈ $" + Math.round(low / BDT_PER_USD) + " – $" + Math.round(high / BDT_PER_USD) + " USD";
     $("#estType").textContent = base.label;
