@@ -23,6 +23,7 @@
   "name": "Rayan — Web Designer & Developer",
   "description": "Affordable, fast, mobile-first websites for restaurants, salons, shops and coaching centres in Bangladesh.",
   "url": "https://rayanofficial.vercel.app/",
+  "address": {"@type": "PostalAddress", "addressLocality": "Cumilla", "addressRegion": "Chattogram", "addressCountry": "BD"},
   "areaServed": "Bangladesh",
   "priceRange": "BDT 2500-12000",
   "sameAs": ["https://wa.me/8801315961760"]
@@ -79,6 +80,38 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Tap the green WhatsApp button on this page, or fill in the project inquiry form below — your message lands straight in my inbox. I reply within 24 hours with honest advice and a fixed quote, in Bangla or English."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is the best web designer in Bangladesh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no official ranking of web designers in Bangladesh, so judge by things you can check: real work you can click, a fixed written quote, delivery time, mobile-first design, and support after launch. Rayan shows four working demos you can try, gives a fixed written quote before work starts, delivers in 3–5 days, and includes 14 days of free support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you build websites for businesses in Cumilla and outside Dhaka?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Rayan is based in Cumilla and works with businesses all over Bangladesh — Dhaka, Chittagong, Sylhet, Khulna and beyond — fully remotely. Everything is handled on WhatsApp and phone, so there is no need to meet in person."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes a good business website in Bangladesh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fast, mobile-first design that loads quickly on mobile data, click-to-call and WhatsApp buttons, a Google Map with opening hours, clear prices, bKash or Nagad payment information, and Bangla and English text — so customers can call, book or order in seconds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see examples of websites you built before ordering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Try the four working demos on this page — Spice House restaurant, Glow Studio salon, BrightPath coaching centre and Urban Cart fashion shop — plus the AuraFix case study. They are labelled Demo Concept: working websites you can click and explore, not screenshots."
       }
     }
   ]
@@ -398,6 +431,15 @@
   .btn-live{margin-top:18px;background:var(--lime);color:#111;width:100%;justify-content:center}
   .btn-live:hover{background:var(--lime);color:#111}
 
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .blog-card{display:flex;flex-direction:column;background:var(--surface);border:1.5px solid var(--ink);padding:28px 26px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+  .blog-card:nth-child(2){transform:translateY(14px)}
+  .blog-card:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow-sm)}
+  .blog-card:nth-child(2):hover{transform:translate(-3px,10px);box-shadow:var(--shadow-sm)}
+  .blog-card h3{font-size:1.3rem;font-weight:800;line-height:1.15}
+  .blog-card p{color:var(--muted);font-size:.95rem;margin-top:10px;flex:1}
+  .blog-read{margin-top:20px;font-weight:800;font-size:.92rem;text-transform:uppercase;letter-spacing:.04em;color:var(--accent)}
+
   .faq-list{max-width:860px}
   .faq{border:1.5px solid var(--ink);background:var(--surface);margin-bottom:12px;overflow:hidden}
   .faq.open{box-shadow:4px 4px 0 var(--ink)}
@@ -659,6 +701,7 @@
     .planner-grid{grid-template-columns:1fr} .estimate{position:static}
     .skills-grid{grid-template-columns:1fr 1fr} .contact-grid{grid-template-columns:1fr}
     .know-grid{grid-template-columns:1fr 1fr} .know:nth-child(3n+2){transform:none} .know:nth-child(3n+2):hover{transform:translate(-3px,-3px)}
+    .blog-grid{grid-template-columns:1fr 1fr} .blog-card:nth-child(2){transform:none} .blog-card:nth-child(2):hover{transform:translate(-3px,-3px)}
     .svc:nth-child(2),.svc:nth-child(4){transform:none}
   }
   @media (max-width:760px){
@@ -675,6 +718,7 @@
     .type-grid,.feat-grid{grid-template-columns:1fr}
     .skills-grid{grid-template-columns:1fr} .why-grid{grid-template-columns:1fr}
     .know-grid{grid-template-columns:1fr}
+    .blog-grid{grid-template-columns:1fr} .blog-card:nth-child(2){transform:none}
     .steps{grid-template-columns:1fr} .step{border-right:0;border-bottom:1.5px solid var(--ink)} .step:nth-child(3){border-bottom:1.5px solid var(--ink)} .step:last-child{border-bottom:0}
     .mock-cards{grid-template-columns:1fr 1fr} .mock-card:last-child{display:none}
     .panel,.estimate,.inquiry{padding:26px 22px}
@@ -1365,6 +1409,50 @@
           <button type="button" aria-expanded="false" data-i18n="guide.6q">How do I contact Rayan, a web designer in Bangladesh?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
           <div class="faq-a"><p data-i18n="guide.6a">Tap the green WhatsApp button on this page, or fill in the project inquiry form below — your message lands straight in my inbox. I reply within 24 hours with honest advice and a fixed quote, in Bangla or English.</p></div>
         </div>
+        <div class="faq">
+          <button type="button" aria-expanded="false" data-i18n="guide.7q">Who is the best web designer in Bangladesh?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="guide.7a">There is no official ranking of web designers in Bangladesh, so judge by things you can check: real work you can click, a fixed written quote, delivery time, mobile-first design, and support after launch. Rayan shows four working demos you can try, gives a fixed written quote before work starts, delivers in 3–5 days, and includes 14 days of free support.</p></div>
+        </div>
+        <div class="faq">
+          <button type="button" aria-expanded="false" data-i18n="guide.8q">Do you build websites for businesses in Cumilla and outside Dhaka?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="guide.8a">Yes. Rayan is based in Cumilla and works with businesses all over Bangladesh — Dhaka, Chittagong, Sylhet, Khulna and beyond — fully remotely. Everything is handled on WhatsApp and phone, so there is no need to meet in person.</p></div>
+        </div>
+        <div class="faq">
+          <button type="button" aria-expanded="false" data-i18n="guide.9q">What makes a good business website in Bangladesh?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="guide.9a">A fast, mobile-first design that loads quickly on mobile data, click-to-call and WhatsApp buttons, a Google Map with opening hours, clear prices, bKash or Nagad payment information, and Bangla and English text — so customers can call, book or order in seconds.</p></div>
+        </div>
+        <div class="faq">
+          <button type="button" aria-expanded="false" data-i18n="guide.10q">Can I see examples of websites you built before ordering?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <div class="faq-a"><p data-i18n="guide.10a">Yes. Try the four working demos on this page — Spice House restaurant, Glow Studio salon, BrightPath coaching centre and Urban Cart fashion shop — plus the AuraFix case study. They are labelled Demo Concept: working websites you can click and explore, not screenshots.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="label" data-i18n="sec.blog">Blog</span>
+        <h2 data-i18n="h2.blog">From the blog</h2>
+        <p class="lead" data-i18n="p.blog">Practical guides on website prices, choosing a designer, and what your business website needs — written for business owners in Bangladesh.</p>
+      </div>
+      <div class="blog-grid">
+        <a class="blog-card reveal" href="https://rayanofficial.vercel.app/blog/website-cost-bangladesh.html">
+          <h3 data-i18n="blog.1t">How much does a website cost in Bangladesh in 2026?</h3>
+          <p data-i18n="blog.1d">Real prices: landing page from ৳2,500, business website from ৳6,500, online shop from ৳9,000 — and what changes the price.</p>
+          <span class="blog-read" data-i18n="blog.read">Read →</span>
+        </a>
+        <a class="blog-card reveal" href="https://rayanofficial.vercel.app/blog/choose-web-designer-bangladesh.html">
+          <h3 data-i18n="blog.2t">How to choose a web designer in Bangladesh</h3>
+          <p data-i18n="blog.2d">No official ranking exists. Judge by real work you can click, a fixed written quote, delivery time and support after launch.</p>
+          <span class="blog-read" data-i18n="blog.read">Read →</span>
+        </a>
+        <a class="blog-card reveal" href="https://rayanofficial.vercel.app/blog/restaurant-website-bangladesh.html">
+          <h3 data-i18n="blog.3t">What should a restaurant website in Bangladesh have?</h3>
+          <p data-i18n="blog.3d">A searchable menu, online ordering, table booking, Google Maps, WhatsApp, photos and opening hours.</p>
+          <span class="blog-read" data-i18n="blog.read">Read →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -2167,6 +2255,24 @@
     "guide.5a": "বাংলাদেশে bKash বা Nagad দিয়ে দিতে পারবেন। শুরুতে 50% দেবেন, বাকি 50% দেবেন শুধু যখন সাইট লাইভ হবে আর আপনি অনুমোদন দেবেন। বিদেশি ক্লায়েন্টরা Payoneer বা Fiverr/Upwork দিয়ে দিতে পারেন।",
     "guide.6q": "বাংলাদেশের ওয়েব ডিজাইনার রায়ানের সাথে কীভাবে যোগাযোগ করব?",
     "guide.6a": "এই পেজের সবুজ WhatsApp বোতামে চাপ দিন, অথবা নিচের প্রজেক্ট ইনকোয়ারি ফর্মটি পূরণ করুন — আপনার মেসেজ সরাসরি আমার ইনবক্সে যাবে। ২৪ ঘণ্টার মধ্যে সৎ পরামর্শ আর ফিক্সড কোটসহ উত্তর দেব, বাংলা বা ইংরেজিতে।",
+    "guide.7q": "বাংলাদেশের সেরা ওয়েব ডিজাইনার কে?",
+    "guide.7a": "বাংলাদেশে ওয়েব ডিজাইনারদের কোনো অফিসিয়াল র‍্যাংকিং নেই, তাই যাচাই করা যায় এমন বিষয় দিয়ে বিচার করুন: ক্লিক করে দেখা যায় এমন আসল কাজ, লিখিত ফিক্সড কোট, ডেলিভারির সময়, মোবাইল-ফার্স্ট ডিজাইন আর লঞ্চের পরের সাপোর্ট। রায়ান চারটি চালু ডেমো দেখান যেগুলো আপনি নিজে চেষ্টা করে দেখতে পারেন, কাজ শুরুর আগেই লিখিত ফিক্সড কোট দেন, 3–5 দিনে ডেলিভারি দেন, আর ১৪ দিনের ফ্রি সাপোর্ট থাকে।",
+    "guide.8q": "কুমিল্লা ও ঢাকার বাইরের ব্যবসার জন্যও কি ওয়েবসাইট বানান?",
+    "guide.8a": "হ্যাঁ। রায়ান কুমিল্লায় থাকেন এবং সারা বাংলাদেশের ব্যবসার সাথে কাজ করেন — ঢাকা, চট্টগ্রাম, সিলেট, খুলনা ও তার বাইরেও — সম্পূর্ণ রিমোটভাবে। সবকিছু WhatsApp ও ফোনেই হয়, তাই সরাসরি দেখা করার দরকার নেই।",
+    "guide.9q": "বাংলাদেশে ভালো বিজনেস ওয়েবসাইট কেমন হয়?",
+    "guide.9a": "দ্রুত, মোবাইল-ফার্স্ট ডিজাইন যা মোবাইল ডেটায় তাড়াতাড়ি লোড হয়, ক্লিক-টু-কল ও WhatsApp বোতাম, খোলার সময়সহ গুগল ম্যাপ, পরিষ্কার দাম, bKash বা Nagad পেমেন্টের তথ্য, আর বাংলা ও ইংরেজি লেখা — যাতে কাস্টমার কয়েক সেকেন্ডেই কল, বুকিং বা অর্ডার করতে পারে।",
+    "guide.10q": "অর্ডার করার আগে আপনার বানানো ওয়েবসাইটের উদাহরণ দেখতে পারি?",
+    "guide.10a": "হ্যাঁ। এই পেজের চারটি চালু ডেমো চেষ্টা করে দেখুন — Spice House রেস্টুরেন্ট, Glow Studio সেলুন, BrightPath কোচিং সেন্টার আর Urban Cart ফ্যাশন শপ — সাথে AuraFix কেস স্টাডি। এগুলোতে Demo Concept লেবেল আছে: ক্লিক করে ঘুরে দেখা যায় এমন চালু ওয়েবসাইট, স্ক্রিনশট নয়।",
+    "sec.blog": "ব্লগ",
+    "h2.blog": "ব্লগ থেকে",
+    "p.blog": "ওয়েবসাইটের দাম, ডিজাইনার বাছাই আর আপনার ব্যবসার ওয়েবসাইটে কী থাকা উচিত — বাংলাদেশি ব্যবসায়ীদের জন্য ব্যবহারিক গাইড।",
+    "blog.1t": "২০২৬ সালে বাংলাদেশে ওয়েবসাইট বানাতে কত টাকা লাগে?",
+    "blog.1d": "আসল দাম: ল্যান্ডিং পেজ ৳2,500 থেকে, বিজনেস ওয়েবসাইট ৳6,500 থেকে, অনলাইন শপ ৳9,000 থেকে — আর দাম কীসে বদলায়।",
+    "blog.2t": "বাংলাদেশে ওয়েব ডিজাইনার কীভাবে বাছাই করবেন",
+    "blog.2d": "কোনো অফিসিয়াল র‍্যাংকিং নেই। বিচার করুন ক্লিক করে দেখা যায় এমন আসল কাজ, লিখিত ফিক্সড কোট, ডেলিভারির সময় আর লঞ্চের পরের সাপোর্ট দিয়ে।",
+    "blog.3t": "বাংলাদেশে রেস্টুরেন্টের ওয়েবসাইটে কী কী থাকা উচিত?",
+    "blog.3d": "খুঁজে পাওয়া যায় এমন মেনু, অনলাইন অর্ডার, টেবিল বুকিং, গুগল ম্যাপ, WhatsApp, ছবি আর খোলার সময়।",
+    "blog.read": "পড়ুন →",
     "ct.lead": "ছোট ফর্মটি পূরণ করে পাঠান — আপনার মেসেজ সরাসরি আমার ইমেইল ইনবক্সে যাবে, <strong style=\"color:#F2EFE6\">“From Portfolio”</strong> লেখা থাকবে যাতে আমি সাথে সাথে চিনতে পারি। ২৪ ঘণ্টার মধ্যে সৎ পরামর্শ আর ফিক্সড কোটসহ উত্তর দেব। কোনো বাধ্যবাধকতা নেই।",
     "ct.p1t": "ফ্রি কোট ও সৎ পরামর্শ",
     "ct.p1s": "দরকার নেই এমন কিছু থাকলে সেটা বলেই দেব — তাতে বিক্রি কম হলেও।",
